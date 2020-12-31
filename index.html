@@ -50,14 +50,14 @@
             {
                 for (int i = 0; i &lt; n - 1; i++)
                 {
-                    int iMin = i;
+                    int min = i;
                     for (int j = i + 1; j &lt; n; j++)
                     {
-                        if (a[iMin] &gt; a[j])
-                            iMin = j;
+                        if (a[min] &gt; a[j])
+                            min = j;
                     }
-                    if (i != iMin)
-                        swap(a[i], a[iMin]);
+                    if (i != min)
+                        swap(a[i], a[min]);
                 }
             }</pre>
         <img src="https://resources.stdio.vn/content/article/5ef62a61fc765a6e805ebcbe/resources/res-1597408173-1597408173895.gif"
